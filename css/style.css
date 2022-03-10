@@ -29,6 +29,16 @@ img {
     cursor: pointer;
 }
 
+.link {
+    display: inline-flex;
+    font-weight: 700px;
+    font-size: 16px;
+    line-height: 1;
+    text-decoration-line: none;
+    color: #D4D6D4;
+    transition: color 0.3s ease-in-out;
+}
+
 .container {
     max-width: 1100px; /* максимальная ширина необходима для облегченной работы с адаптивом */
     padding: 0px 15px;
@@ -44,33 +54,98 @@ img {
 
 .header-container {
     display: flex;
+    padding: 24px 0;
     justify-content: space-between;
+    align-items: center;
 }
 
 .burger {
-    position: relative;
+    display: block;
     width: 40px;
     height: 40px;
-    padding: 14px 11px;
     background-color: #F5F6F7;
     border-radius: 100%;
+    position: relative;
 }
 
-.burger-line {
-    
+.burger-line,
+.burger-line::before,
+.burger-line::after {
     position: absolute;
-    left: 0;
-    top: 0;
-    display: inline-block;
-    width: 100%;
+    top: 50%; margin-top: -1px;
+    left: 50%; margin-left: -9px;
     height: 2px;
-    background-color:black;
+    width: 18px;
+    background: #0e2431;
+}
+
+.burger-line::before,
+.burger-line::after {
+    content: '';
+}
+.burger-line::before {
+    transform: translateY(5px);
+}
+.burger-line::after {
+    transform: translateY(-5px);
 }
 
 .hero {
-    padding-top: 100px;
+    padding-top: 189px;
+    padding-bottom: 210px;
+    min-height: 811px;
     background-image: url('../img/hero-bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.hero-content {
+    max-width: 616px;
+    color: #fff;
+}
+
+.hero-subtitle {
+    display: inline-block;
+    margin-bottom: 22px;
+    font-weight: 400px;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.hero-title {
+    display: inline-block;
+    margin: 0px; /* чтобы сохранить отсуствие отступов у других сторон */
+    margin-bottom: 24px;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 74px;
+}
+
+.hero-descr {
+    margin: 0px;
+    margin-bottom: 45px;
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.link svg {
+    height: 12px;
+    width: 12px;
+    fill: currentColor;
+    transform: translateY(2px);
+}
+
+.link span {
+    border-bottom: 1px solid currentColor;
+    text-indent: 6px;
+}
+
+.link:hover {
+    color: #FFD723;
+}
+
+.hero-link {
+    color: #FFD723;
 }
