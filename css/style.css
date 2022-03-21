@@ -157,15 +157,20 @@ img {
     color: #FFD723;
 }
 
-.services-title {
-    max-width: 706px;
-    margin: 0;
-    margin-bottom: 60px;
+.services {
+    margin-bottom: -180px;
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
 
-.services {
-    padding-top: 150px;
-    padding-bottom: 50px;
+.services-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 46px;
+    color: #4D533C;
+    max-width: 606px;
+    margin: 0;
+    margin-bottom: 60px;
 }
 
 .services-list {
@@ -187,9 +192,53 @@ img {
 
 .services-descr {
     margin: 0;
-    font-weight: 400;
+    margin-bottom: 56px;
+    max-width: 196px;
+    font-weight: 500;
     font-size: 14px;
     line-height: 26px;
     color: rgba(33, 56, 66, 0.6);
 }
 
+.services-item {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.services-link {
+    margin-bottom: 0;
+    margin-top: auto;
+}
+
+.get-started {
+    position: relative;
+    top: 180px;
+    width: 88%;
+    padding: 70px 0;
+    box-shadow: 50px 130px 100px rgba(0, 0, 0, 0.145947);
+    background-color: #FAFAFA;
+}
+
+.get-started-title {
+    max-width: 822px;
+    margin: 0;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 74px;
+    color: #4D533C;
+}
+
+.get-started-link {
+    text-transform: uppercase;
+}
+
+.footer {
+    color: #fff;
+    padding-top: 300px;
+    background-image: url(../img/footer-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
