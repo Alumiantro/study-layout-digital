@@ -242,3 +242,57 @@ img {
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 52px;
+    border-bottom: 1px solid #5D6544;
+}
+
+.footer-contacts-item:not(:last-child) { /* у всех элементов, кроме последнего, отступ справа 128*/
+    margin-right: 128px;
+}
+
+.footer-contacts-text {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    color: #B6C197;
+    margin-bottom: 8px;
+}
+
+.footer-contacts-value {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 40px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.footer-middle {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-title {
+    margin: 0;
+    margin-bottom: 21px;
+    margin-top: 60px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.footer-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    color: #B6C197;
+    text-decoration: none;
+}
